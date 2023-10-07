@@ -1,0 +1,699 @@
+body {
+    margin: 0px;
+}
+
+
+
+#logo_picture {
+    padding-left: 8vh;
+    height: 7vh;
+}
+
+.topnav {
+    position: sticky;
+    top: 0;
+    z-index: 9999999999; /* prioriteit (komt door de hover van de cards) */
+    scroll-padding-top: 10vh;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 1vh 2vh #606060;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: row;
+    font-size: clamp(5px, 3vw, 10px);
+    height: 5vh;
+    min-height: 75px;
+    min-width: 100vw;
+}
+
+.topnav-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    font-size: clamp(10px, 3vh, 20px);
+}
+
+.speciale-link {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(10px, 3vw, 20px);
+    align-items: center;
+    padding-left: 1vh;
+    height: 5vh;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.topnav-2 a:link,
+.topnav-2 a:visited {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.topnav-2 a:hover {
+    color: #3a3a3a;
+    background-color: #e6e2cf;
+    border: 0px solid #98230f;
+    box-shadow: 0px 0vh 4vh #e0d28f;
+    border-radius: 10px;
+}
+
+.topnav-2 a:active {
+    color: yellow;
+}
+
+.speciale-link a:link,
+.speciale-link a:visited {
+    color: #c9c9c9;
+    background-color: #504e48;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(10px, 3vh, 20px);
+    width: clamp(100px, 10vw, 200px);
+}
+
+.speciale-link a:hover {
+    color: #ffffff;
+    background-color: #7e7b72;
+    border: 0px solid #98230f;
+    box-shadow: 0px 0vh 2vh #b8b195;
+    border-radius: 10px;
+    transition: 0.15s ease-in-out;
+    text-align: center;
+    transform-origin: center;
+    font-size: clamp(15px, 4vh, 30px);
+    width: clamp(150px, 15vw, 250px);
+}
+
+.speciale-link a:active {
+    color: yellow;
+}
+
+
+
+
+
+header {
+    background-image: url(/images/Graskaas_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% calc(max(200px, 100%)); 
+    /*het plaatje is niet groot genoeg dus deze moet gaan stretchen. 
+    Ik kon geen andere werkende oplossing vinden. */
+    padding: 15vh 0;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    cursor: default;
+    font-size: clamp(75px, 10vw, 100px);
+    text-shadow: -1px -1px 0 #fff,
+                0 -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 0 0 #fff,
+                1px 0 0 #fff,
+                -1px 1px 0 #fff,
+                0 1px 0 #fff,
+                1px 1px 0 #fff,
+                -0.5px -0.5px 0 #fff,
+                0 -0.5px 0 #fff,
+                0.5px -0.5px 0 #fff,
+                -0.5px 0 0 #fff,
+                0.5px 0 0 #fff,
+                -0.5px 0.5px 0 #fff,
+                0 0.5px 0 #fff,
+                0.5px 0.5px 0 #fff;
+                 /* nee ik heb dit niet zelf bedacht */
+}
+
+.uitleg {
+    cursor: default;
+    font-size: clamp(30px, 5vw, 40px);
+    text-shadow: -1px -1px 0 #fff,
+                0 -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 0 0 #fff,
+                1px 0 0 #fff,
+                -1px 1px 0 #fff,
+                0 1px 0 #fff,
+                1px 1px 0 #fff,
+                -0.5px -0.5px 0 #fff,
+                0 -0.5px 0 #fff,
+                0.5px -0.5px 0 #fff,
+                -0.5px 0 0 #fff,
+                0.5px 0 0 #fff,
+                -0.5px 0.5px 0 #fff,
+                0 0.5px 0 #fff,
+                0.5px 0.5px 0 #fff;
+    margin: 0vh 10vh
+}
+
+.product_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    width: 20vh;
+    height: 10vh;
+    background-color: #e9ab39;
+    margin: 4vh;
+    border: 0.5vh solid #000;
+    border-radius: 2vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.15s ease-in-out;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+.links:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0vh 5vh #ffffff;
+}
+
+
+
+
+
+
+
+h2 {
+    padding-top: 5vh;
+    margin: 0;
+    cursor: default;
+    font-size: clamp(25px, 5vw, 50px);
+    text-shadow: -1px -1px 0 #fff,
+                0 -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 0 0 #fff,
+                1px 0 0 #fff,
+                -1px 1px 0 #fff,
+                0 1px 0 #fff,
+                1px 1px 0 #fff,
+                -0.5px -0.5px 0 #fff,
+                0 -0.5px 0 #fff,
+                0.5px -0.5px 0 #fff,
+                -0.5px 0 0 #fff,
+                0.5px 0 0 #fff,
+                -0.5px 0.5px 0 #fff,
+                0 0.5px 0 #fff,
+                0.5px 0.5px 0 #fff;
+                 /* op internet opgezocht */
+}
+
+.cards  {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 10vh;
+    padding-bottom: 8vh;
+    gap: 5vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: 0.15s;
+}
+
+section a:hover {
+    transform: scale(1.1);
+}
+
+h3 {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(20px, 5vh, 50px);
+    margin: 0;
+    padding: 2vh 0 0 2vh;
+}
+
+.rating {
+    color: #eec041;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(20px, 5vh, 50px);
+    margin: 0;
+    padding: 2vh 0 0 2vh;
+}
+
+h4 {
+    color: #000000;
+    margin-left: 2vh;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(15px, 3vh, 32px);
+    margin: 0;
+    padding: 2vh 2vh 0 2vh;
+}
+
+.product_1 {
+    border: 0.5vh solid #000;
+    background-color: #fff;
+    border-radius: 3vh;
+    width: clamp(200px, 40vh, 500px);
+    height: 80vh;
+    min-height: 400px;
+}
+
+.product_2 {
+    border: 0.5vh solid #000;
+    background-color: #fff;
+    border-radius: 3vh;
+    width: clamp(200px, 40vh, 500px);
+    height: 80vh;
+    min-height: 400px;
+}
+
+.product_3 {
+    border: 0.5vh solid #000;
+    background-color: #fff;
+    border-radius: 3vh;
+    width: clamp(200px, 40vh, 500px);
+    height: 80vh;
+    min-height: 400px;
+}
+
+.product_link {
+    background-color: #e9ab39;
+    color: #000000;
+    margin: 2vh 0 0 2vh;
+    border-radius: 1vh;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(15px, 3vh, 32px);
+    width: clamp(100px, 20vh, 200px);
+}
+
+#boerenkaas {
+    min-width: clamp(200px, 40vh, 500px);
+    max-width: clamp(200px, 40vh, 500px);
+    background-color: #ffffff;
+    border-radius: 2vh;
+}
+
+#zwitserse_kaas {
+    min-width: clamp(200px, 40vh, 500px);
+    max-height: clamp(200px, 40vh, 500px);
+    background-color: #ffffff;
+    border-radius: 2vh;
+}
+
+#cheddar {
+    min-width: clamp(200px, 40vh, 500px);
+    max-width: clamp(200px, 40vh, 500px);
+    background-color: #ffffff;
+    border-radius: 2vh;
+}
+
+section:hover {
+    transform: scale(1.1);
+    transition: 0.15s;
+}
+
+
+
+
+
+.ding_voor_de_achtergrond {
+    background-color: #f1ebcf;
+    padding-bottom: 5vh;
+}
+
+.form_stuff {
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 2vh;
+}
+
+.form_stuff h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.invullen {
+    margin-bottom: 20px;
+}
+.invullen label {
+    display: block;
+    margin-bottom: 5px;
+}
+.invullen input[type="text"], .invullen input[type="email"], .invullen input[type="date"]{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0.5vh solid #3a3a3a;
+    border-radius: 1vh;
+}
+.invullen.row {
+    display: flex;
+    justify-content: space-between; /*opgezocht*/
+    flex-wrap: wrap;    /*opgezocht*/
+}
+.invullen.row .column {
+    width: 48%;
+    margin-bottom: 0;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0.5vh solid #3a3a3a;
+    border-radius: 1vh;
+}
+
+.invullen.bericht {
+    width: 100%;
+}
+
+.invullen textarea {
+    width: 100%;
+    padding: 2vh;
+    box-sizing: border-box;
+    border: 0.5vh solid #3a3a3a;
+    border-radius: 1vh;
+    /*geen idee hoe je die mogelijkheid om te resizen in de html kan uitzetten 
+    (dat ding rechtsondering waar je met je muis op kan)*/
+}
+
+.invullen.nieuwsbrief-ding {
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+.invullen.nieuwsbrief-ding label {
+    margin-right: 1vw;
+    margin-bottom: 0;
+}
+.invullen.nieuwsbrief-ding input[type="radio"] {
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+    vertical-align: middle;
+}
+
+.bruh {
+    display: flex;
+    margin-top: 0.5vw;
+}
+
+.invullen.algemene-voorwaarden {
+    width: 100%;
+    margin: 2vh 0 0 0.5vw;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+.invullen.algemene-voorwaarden label {
+    display: flex;
+    margin: 0;
+}
+
+input:valid {
+    background-color: #d6ffd6;
+}
+
+.submit_button {
+    margin-top: 2vh;
+    color: #fff;
+    font-size: clamp(10px, 3vh, 25px);
+    background-color: gray;
+    border: 0 solid #000;
+    border-radius: 1vh;
+    width: 100%;
+    height: 10vh;
+    transition: 0.15s;
+}
+
+.submit_button:hover {
+    transform: scale(1.1);
+    font-size: clamp(15px, 4vh, 30px);
+    background-color: #adadad;
+    box-shadow: 0px 0vh 5vh #ffffff;
+    transition: 0.15s;
+}
+
+
+
+footer {
+    background-color: #9e987e;
+    color: #000000;
+    padding: 5vh 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #logo_picture {
+    padding-left: 0;
+}
+
+footer p {
+    font-size: clamp(10px, 2vh, 25px);
+}
+
+.belangrijk {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.socials a {
+    margin-right: 2vw;
+}
+
+#twitter_logo{
+    max-width: 5vw;
+}
+
+#instagram_logo{
+    max-width: 5vw;
+}
+
+.meuk ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.meuk ul a {
+    text-decoration: none;
+    color: #525252;
+    transition: 0.15s ease-in-out;
+    font-size: 3vh;
+    font-size: clamp(10px, 2vh, 25px);
+    border-radius: 1vh;
+    width: 100%;
+    height: 10vh;
+}
+
+.meuk ul a:hover {
+    font-size: clamp(15px, 3vh, 30px);
+    transition: 0.15s;
+}
+
+.meuk ul li {
+    margin-right: 20px;
+}
+
+
+
+
+@media (width <= 650px) {
+    .topnav {
+        position: sticky;
+        top: 0;
+        flex-direction: column;
+        height: clamp(100px, 16vh, 650px);
+        padding: 4vh 0;
+        font-size: clamp(5px, 1vh, 15px);
+        align-items: center;
+        max-width: 100vw;
+    }
+}
+
+@media (width <= 650px) {
+    #logo_picture {
+        padding: 0vh;
+        height: 3vh;
+        min-height: 25px;
+    }
+}
+
+
+@media (width <= 650px) {
+    .topnav-2 {
+        flex-direction: column;
+        align-items: center;
+        font-size: clamp(10px, 2vh, 15px);
+        padding-top: 1vh;
+        width: 40vh
+    }
+}
+
+
+
+@media (width <= 650px) {
+    .topnav-2 a:hover {
+        border-radius: 10px;
+        transition: 0.25s ease-in-out;
+        transform: center;
+        transform-origin: center;
+        font-size: clamp(15px, 3vh, 25px);
+        width: 40vh;
+    }
+}
+
+@media (width <= 650px) {
+    .speciale-link {
+        flex-direction: column;
+        height: 40vh;
+        font-size: clamp(10px, 2vh, 15px);
+        padding-top: 1vh;
+        width: 40vh;
+    }
+}
+
+@media (width <= 650px) {
+    .speciale-link a:hover {
+        color: #ffffff;
+        border-radius: 10px;
+        transition: 0.25s ease-in-out;
+        transform: center;
+        font-size: clamp(15px, 3vh, 25px);
+        width: 40vh;
+    }
+}
+
+@media (width <= 650px) {
+    header {
+        margin-top: 0;
+        padding: 1vh 0 3vh 0 ;
+    }
+}
+
+@media (width <= 650px) {
+    .uitleg {
+        margin: 0vw 2vw;
+    } 
+}
+
+@media (width <= 650px) {
+    h2 {
+        font-size: clamp(35px, 5vh, 75px);
+    }
+}
+
+@media (width <= 900px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+@media (width <= 650px) {
+    .form_stuff {
+        max-width: 90%;
+    }
+}
+
+@media (width <= 650px) {
+    .invullen {
+        margin-bottom: 2vh;
+    }
+}
+
+@media (width <= 650px) {
+    .invullen label {
+        margin: 0;
+    }
+}
+
+@media (width <= 650px) {
+    .invullen.row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+}
+
+
+@media (width <= 650px) {
+    .invullen.row .column {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+}
+
+
+
+@media (width <= 650px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4vh 4vh 2vh 4vh;
+    }
+}
+
+@media (width <= 650px) {
+    .meuk ul li{
+        padding-bottom: 2vh;
+    }
+}
+
+@media (width <= 650px) {
+    .meuk ul  {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+.Overige_producten {
+    background-image: url(/images/Kaas_achtergrond.jpg);
+    background-size: 100%;
+    text-align: center;
+    /*deze duurt best wel lang vandaar dat deze achteraan staat*/
+}

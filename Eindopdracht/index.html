@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eindopdracht</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+        <nav class="topnav">
+            <img src="/images/illegaal_gedownloade_kaas.png" alt="img" id="logo_picture">
+            <div class="spacer"></div>
+            <div class="topnav-2">
+                <a href="Headline" class="Omschrijving">Productomschrijving</a>
+                <a href="Gerelateerde producten" class="Gerelateerde_producten">Gerelateerde producten</a>
+                <a href="#Forum" class="Laat je persoonlijke informatie achter :D">Forum</a>
+            </div>
+            <div class="speciale-link">
+                <a href="Homepage" class="Zwarte_link" id="zwarte_link">Thuispagina</a>
+            </div>
+        </nav>
+
+        <main>
+            <header>
+                    <h1>Graskaas</h1>
+                    <p class="uitleg">Onze graskaas bestaat uit kaas gemaakt van onze beste koeien! De kaas heeft een ongekend zachte smaak, en u zult merken dat u snel meer wilt. 4 halen, 4 betalen.</p>
+                    <div class="product_links">
+                        <div class="links">
+                            <a href="#">Bezorgen</a>
+                        </div>
+                        <div class="links">
+                            <a href="#">Halen</a>
+                        </div>
+                    </div>
+            </header>
+
+            <div class="Overige_producten">
+                <h2>Gerelateerde Producten</h2>
+                <div class="cards">
+                    <section class="product_1">
+                        <img src="/images/Boerenkaas.jpg" alt="Boerenkaas" id="boerenkaas">
+                        <h3>Boerenkaas</h3>
+                        <p class="rating">★ ★ ★ ★ ★</p>
+                        <h4>Deze kaas smaakt anders dan andere kaas</h4>
+                        <a href="#" class="product_link">Naar pagina</a>
+                    </section>
+                    <section class="product_2">
+                        <img src="/images/Zwitserse_kaas.jpg" alt="Zwitserse kaas" id="zwitserse_kaas">
+                        <h3>Zwitserse kaas</h3>
+                        <p class="rating">★ ★ ★ ★ ★</p>
+                        <h4>Deze kaas heeft gaten, wat betekent dat je minder voor je geld krijgt.</h4>
+                        <a href="#" class="product_link">Naar pagina</a>
+                    </section>
+                    <section class="product_3">
+                        <img src="/images/Cheddar.jpg" alt="Cheddar" id="cheddar">
+                        <h3>Cheddar</h3>
+                        <p class="rating">★ ★ ★ ★ <span style="color: rgb(192, 192, 192)">★</span></p>
+                        <h4>Hamburger kaas</h4>
+                        <a href="#" class="product_link">Naar pagina</a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="ding_voor_de_achtergrond">
+                <div class="form_stuff">
+                    <h2>Forum</h2>
+                    <form action="contact_bedankt.html">
+                        <div class="invullen row">
+                            <div class="invullen column">
+                                <label for="voornaam">Uw Voornaam</label>
+                                <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required>
+                            </div>
+                            <div class="invullen column">
+                                <label for="achternaam">Uw achternaam</label>
+                                <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam" required>
+                            </div>
+                        </div>
+                        <div class="invullen">
+                            <label for="email">Uw e-mail adres</label>
+                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="invullen row">
+                            <div class="invullen column">
+                                <label for="adres">Uw woonplaats</label>
+                                <input type="text" id="adres" name="adres" placeholder="Woonplaats" required>
+                            </div>
+                            <div class="invullen column">
+                                <label for="geboortedatum">Uw geboortedatum</label>
+                                <input type="date" id="geboortedatum" name="geboortedatum" required>
+                            </div>
+                        </div>
+                        <div class="invullen onderwerp">
+                            <label for="onderwerp">Onderwerp</label>
+                            <select id="bericht" name="bericht">
+                                <option value="0">Kies onderwerp van het bericht...</option>
+                                <option value="1">Keuze</option>
+                                <option value="2">Keuze 2</option>
+                                <option value="3">Keuze 3</option>
+                            </select>
+                        </div>
+                        <div class="invullen bericht">
+                            <label for="bericht">Bericht</label>
+                            <textarea id="bericht" name="bericht" rows="10"></textarea>
+                        </div>
+                        <div class="invullen nieuwsbrief-ding">
+                            <div class="invullen column"></div>
+                            <label>Wil je je inschrijven voor onze nieuwsbrief?</label>
+                            <div class="bruh">
+                                <input type="radio" id="ja" name="nieuwsbrief" checked="checked" value="ja">
+                                <label for="ja">Ja</label>
+                                <input type="radio" id="nee" name="nieuwsbrief" value="nee">
+                                <label for="nee">Nee</label>
+                            </div>
+                        </div>
+                        <div class="invullen algemene-voorwaarden">
+                            <input type="checkbox" id="voorwaarden" name="voorwaarden" required>
+                            <label for="voorwaarden">Ik ga akkoord met de algemene voorwaarden</label>
+                        </div>
+                        <button class="submit_button" type="submit">Verstuur</button>
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <div class="belangrijk">
+                    <img src="/images/illegaal_gedownloade_kaas.png" alt="img" id="logo_picture">
+                    <p>&copy; 2017-2023 Hidde</p>
+                    <div class="socials">
+                        <a href="https://twitter.com/"><img src="/images/twitter.png" alt="Ik heb geen twitter" id="twitter_logo"></a>
+                        <a href="https://instagram.com/hidde_vol.2?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img src="/images/instagram.png" alt="Instagram" id="instagram_logo"></a>
+                    </div>
+                </div>
+                <div class="meuk">
+                    <ul>
+                        <li><a href="#">Privacyverklaring</a></li>
+                        <li><a href="#">Algemene voorwaarden</a></li>
+                        <li><a href="#">Cookiebeleid</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
